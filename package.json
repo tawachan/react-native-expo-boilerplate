@@ -5,21 +5,30 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "tslint": "tslint --project ./  --fix"
+    "tslint": "tslint --project ./  --fix",
+    "test": "jest"
   },
   "dependencies": {
     "expo": "^32.0.0",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-    "tslib": "1.9.3"
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.0",
+    "tslib": "1.9.3",
+    "typescript-fsa-reducers": "^1.2.0",
+    "typescript-fsa-redux-saga-extended": "^1.0.6"
   },
   "devDependencies": {
     "@types/expo": "31.0.9",
     "@types/expo__vector-icons": "9.0.0",
+    "@types/jest": "^23.3.13",
     "@types/react": "16.7.22",
     "@types/react-native": "0.57.32",
     "babel-preset-expo": "^5.0.0",
+    "jest": "^24.0.0",
     "prettier": "^1.16.3",
+    "remote-redux-devtools": "^0.5.16",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",
     "tslint-plugin-prettier": "^2.0.1",
