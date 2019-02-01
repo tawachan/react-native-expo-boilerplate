@@ -1,4 +1,3 @@
-import { AsyncStorage } from "react-native";
 import { applyMiddleware, combineReducers, createStore } from "redux";
 import createSagaMiddleware from "redux-saga";
 import { composeWithDevTools } from "remote-redux-devtools";
@@ -12,7 +11,7 @@ export interface AppState {
   samples: SampleState;
 }
 
-const store = createStore(
+export const store = createStore(
   combineReducers<AppState>({
     samples: sampleReducer,
   }),
@@ -20,5 +19,3 @@ const store = createStore(
 );
 
 sagaMiddleware.run(sagaFunctions);
-
-export default store;

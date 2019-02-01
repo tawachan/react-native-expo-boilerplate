@@ -14,8 +14,7 @@
     "sourceMap": true,
     "target": "es2015",
     "paths": {
-      "@app/env": ["environments/environment"],
-      "@app": ["src"]
+      "@app/env": ["environments/environment"]
     }
   },
   "include": ["src/**/*", "App.tsx"],

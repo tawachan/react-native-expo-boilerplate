@@ -5,7 +5,7 @@ describe("SAMPLE", () => {
   describe("FETCH_SAMPLES_ASYNC", () => {
     const action = {
       type: actions.fetchSamplesAsync.done.type,
-      payload: { text: "Async" },
+      payload: { result: { text: "Async" } },
     };
 
     it("ASYNCがセットされていることを確認", () => {

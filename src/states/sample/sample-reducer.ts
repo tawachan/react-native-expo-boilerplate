@@ -17,6 +17,6 @@ export const sampleReducer = reducerWithInitialState(initialState)
   })
   .case(sampleActions.fetchSamplesSync, (state, payload) => {
     return Object.assign({}, state, {
-      text: payload.text,
+      text: "Sync",
     });
   });
