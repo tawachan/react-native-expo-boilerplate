@@ -1,0 +1,63 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "rules": {
+    "prettier": [
+      true,
+      {
+        "singleQuote": false,
+        "trailingComma": "es5",
+        "printWidth": 120
+      }
+    ],
+    "no-duplicate-variable": true,
+    "no-angle-bracket-type-assertion": false,
+    "no-reference": false,
+    "curly": true,
+    "indent": [true, "spaces"],
+    "no-conditional-assignment": true,
+    "no-debugger": true,
+    "no-console": [true, "log", "debug", "info", "time", "timeEnd", "trace"],
+    "no-consecutive-blank-lines": true,
+    "no-eval": true,
+    "no-namespace": false,
+    "no-switch-case-fall-through": true,
+    "no-trailing-whitespace": true,
+    "no-unused-expression": true,
+    "no-use-before-declare": false,
+    "no-use-before-define": ["error", { "functions": false, "classes": true }],
+    "no-shadowed-variable": false,
+    "one-line": [
+      true,
+      "check-catch",
+      "check-else",
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "switch-default": true,
+    "triple-equals": [true, "allow-null-check"],
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case",
+      "allow-snake-case"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-type",
+      "check-typecast"
+    ],
+    "max-line-length": [true, 170],
+    "max-classes-per-file": [true, 2]
+  }
+}
