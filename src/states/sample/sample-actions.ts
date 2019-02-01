@@ -1,6 +1,6 @@
 import actionCreatorFactory from "typescript-fsa";
 
-const actionCreator = actionCreatorFactory("COMMENT");
+const actionCreator = actionCreatorFactory("SAMPLE");
 
 export const sampleActions = {
   fetchSamplesAsync: actionCreator.async<{}, { text: string }>("FETCH_SAMPLES_ASYNC"),

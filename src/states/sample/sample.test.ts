@@ -8,7 +8,7 @@ describe("SAMPLE", () => {
       payload: { result: { text: "Async" } },
     };
 
-    it("ASYNCがセットされていることを確認", () => {
+    it("checks value is Async", () => {
       const state = reducer(initialState, action);
       expect(state.text).toEqual("Async");
     });
@@ -20,7 +20,7 @@ describe("SAMPLE", () => {
       payload: { text: "Sync" },
     };
 
-    it("SYNCがセットされていることを確認", () => {
+    it("checks value is Sync", () => {
       const state = reducer(initialState, action);
       expect(state.text).toEqual("Sync");
     });
